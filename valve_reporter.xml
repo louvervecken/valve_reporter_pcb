@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>C:\Users\ffytwr\Documents\gsv\pcbs\valve_reporter\valve_reporter.sch</source>
-    <date>1/29/2019 4:01:15 PM</date>
+    <date>1/29/2019 4:49:19 PM</date>
     <tool>Eeschema (5.0.2)-1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -68,7 +68,7 @@
     </comp>
     <comp ref="D16">
       <value>D_Shockley</value>
-      <footprint>digikey-footprints:DO-214AC</footprint>
+      <footprint>Diode_SMD:D_SOD-323_HandSoldering</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="D_Shockley" description="Shockley (PNPN) diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -140,7 +140,7 @@
     </comp>
     <comp ref="D15">
       <value>D_Shockley</value>
-      <footprint>digikey-footprints:DO-214AC</footprint>
+      <footprint>Diode_SMD:D_SOD-323_HandSoldering</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="D_Shockley" description="Shockley (PNPN) diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -180,7 +180,7 @@
     </comp>
     <comp ref="D14">
       <value>D_Shockley</value>
-      <footprint>digikey-footprints:DO-214AC</footprint>
+      <footprint>Diode_SMD:D_SOD-323_HandSoldering</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="D_Shockley" description="Shockley (PNPN) diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -220,7 +220,7 @@
     </comp>
     <comp ref="D13">
       <value>D_Shockley</value>
-      <footprint>digikey-footprints:DO-214AC</footprint>
+      <footprint>Diode_SMD:D_SOD-323_HandSoldering</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="D_Shockley" description="Shockley (PNPN) diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -260,7 +260,7 @@
     </comp>
     <comp ref="D12">
       <value>D_Shockley</value>
-      <footprint>digikey-footprints:DO-214AC</footprint>
+      <footprint>Diode_SMD:D_SOD-323_HandSoldering</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="D_Shockley" description="Shockley (PNPN) diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -300,7 +300,7 @@
     </comp>
     <comp ref="D11">
       <value>D_Shockley</value>
-      <footprint>digikey-footprints:DO-214AC</footprint>
+      <footprint>Diode_SMD:D_SOD-323_HandSoldering</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="D_Shockley" description="Shockley (PNPN) diode"/>
       <sheetpath names="/" tstamps="/"/>
@@ -340,7 +340,7 @@
     </comp>
     <comp ref="D10">
       <value>D_Shockley</value>
-      <footprint>digikey-footprints:DO-214AC</footprint>
+      <footprint>Diode_SMD:D_SOD-323_HandSoldering</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="D_Shockley" description="Shockley (PNPN) diode"/>
       <sheetpath names="/" tstamps="/"/>
