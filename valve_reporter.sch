@@ -106,59 +106,25 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x14 J2
 U 1 1 5C4F2851
-P 10250 3800
-F 0 "J2" H 10330 3792 50  0000 L CNN
-F 1 "Screw_Terminal_01x14" H 10330 3701 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-14-3.5-H_1x14_P3.50mm_Horizontal" H 10250 3800 50  0001 C CNN
-F 3 "~" H 10250 3800 50  0001 C CNN
-	1    10250 3800
-	1    0    0    -1  
+P 10150 3900
+F 0 "J2" H 10230 3892 50  0000 L CNN
+F 1 "Screw_Terminal_01x14" H 10230 3801 50  0000 L CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-14-3.5-H_1x14_P3.50mm_Horizontal_valve_rep" H 10150 3900 50  0001 C CNN
+F 3 "~" H 10150 3900 50  0001 C CNN
+	1    10150 3900
+	1    0    0    1   
 $EndComp
 $Comp
 L power:+12V #PWR0110
 U 1 1 5C4F28B4
-P 9900 3050
-F 0 "#PWR0110" H 9900 2900 50  0001 C CNN
-F 1 "+12V" H 9915 3223 50  0000 C CNN
-F 2 "" H 9900 3050 50  0001 C CNN
-F 3 "" H 9900 3050 50  0001 C CNN
-	1    9900 3050
+P 9800 3150
+F 0 "#PWR0110" H 9800 3000 50  0001 C CNN
+F 1 "+12V" H 9815 3323 50  0000 C CNN
+F 2 "" H 9800 3150 50  0001 C CNN
+F 3 "" H 9800 3150 50  0001 C CNN
+	1    9800 3150
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10050 3200 9900 3200
-Wire Wire Line
-	9900 3200 9900 3050
-Wire Wire Line
-	10050 3400 9900 3400
-Wire Wire Line
-	9900 3400 9900 3200
-Connection ~ 9900 3200
-Wire Wire Line
-	10050 3600 9900 3600
-Wire Wire Line
-	9900 3600 9900 3400
-Connection ~ 9900 3400
-Wire Wire Line
-	10050 3800 9900 3800
-Wire Wire Line
-	9900 3800 9900 3600
-Connection ~ 9900 3600
-Wire Wire Line
-	10050 4000 9900 4000
-Wire Wire Line
-	9900 4000 9900 3800
-Connection ~ 9900 3800
-Wire Wire Line
-	10050 4200 9900 4200
-Wire Wire Line
-	9900 4200 9900 4000
-Connection ~ 9900 4000
-Wire Wire Line
-	10050 4400 9900 4400
-Wire Wire Line
-	9900 4400 9900 4200
-Connection ~ 9900 4200
 $Comp
 L Device:R R16
 U 1 1 5C504FB5
@@ -176,7 +142,7 @@ U 1 1 5C504FBC
 P 7450 4300
 F 0 "D9" V 7404 4379 50  0000 L CNN
 F 1 "3.3V" V 7495 4379 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323F" H 7450 4300 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 7450 4300 50  0001 C CNN
 F 3 "~" H 7450 4300 50  0001 C CNN
 	1    7450 4300
 	0    1    1    0   
@@ -359,7 +325,7 @@ U 1 1 5C572F19
 P 7400 3750
 F 0 "D8" V 7354 3829 50  0000 L CNN
 F 1 "3.3V" V 7445 3829 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323F" H 7400 3750 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 7400 3750 50  0001 C CNN
 F 3 "~" H 7400 3750 50  0001 C CNN
 	1    7400 3750
 	0    1    1    0   
@@ -448,7 +414,7 @@ U 1 1 5C574AE9
 P 7400 3200
 F 0 "D7" V 7354 3279 50  0000 L CNN
 F 1 "3.3V" V 7445 3279 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323F" H 7400 3200 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 7400 3200 50  0001 C CNN
 F 3 "~" H 7400 3200 50  0001 C CNN
 	1    7400 3200
 	0    1    1    0   
@@ -537,7 +503,7 @@ U 1 1 5C576D42
 P 7400 2650
 F 0 "D6" V 7354 2729 50  0000 L CNN
 F 1 "3.3V" V 7445 2729 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323F" H 7400 2650 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 7400 2650 50  0001 C CNN
 F 3 "~" H 7400 2650 50  0001 C CNN
 	1    7400 2650
 	0    1    1    0   
@@ -626,7 +592,7 @@ U 1 1 5C579648
 P 7400 2100
 F 0 "D5" V 7354 2179 50  0000 L CNN
 F 1 "3.3V" V 7445 2179 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323F" H 7400 2100 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 7400 2100 50  0001 C CNN
 F 3 "~" H 7400 2100 50  0001 C CNN
 	1    7400 2100
 	0    1    1    0   
@@ -715,7 +681,7 @@ U 1 1 5C57C8B0
 P 7400 1550
 F 0 "D4" V 7354 1629 50  0000 L CNN
 F 1 "3.3V" V 7445 1629 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323F" H 7400 1550 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 7400 1550 50  0001 C CNN
 F 3 "~" H 7400 1550 50  0001 C CNN
 	1    7400 1550
 	0    1    1    0   
@@ -804,7 +770,7 @@ U 1 1 5C5805DF
 P 7400 1000
 F 0 "D3" V 7354 1079 50  0000 L CNN
 F 1 "3.3V" V 7445 1079 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323F" H 7400 1000 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 7400 1000 50  0001 C CNN
 F 3 "~" H 7400 1000 50  0001 C CNN
 	1    7400 1000
 	0    1    1    0   
@@ -946,49 +912,35 @@ Wire Wire Line
 	5500 3450 4200 3450
 Connection ~ 6800 4150
 Wire Wire Line
-	10050 3300 9700 3300
-Wire Wire Line
 	9700 3300 9700 850 
 Wire Wire Line
 	9700 850  7850 850 
 Connection ~ 7850 850 
-Wire Wire Line
-	10050 3500 9550 3500
 Wire Wire Line
 	9550 3500 9550 1400
 Wire Wire Line
 	9550 1400 7850 1400
 Connection ~ 7850 1400
 Wire Wire Line
-	10050 3700 9400 3700
-Wire Wire Line
 	9400 3700 9400 1950
 Wire Wire Line
 	9400 1950 7850 1950
 Connection ~ 7850 1950
-Wire Wire Line
-	10050 3900 9250 3900
 Wire Wire Line
 	9250 3900 9250 2500
 Wire Wire Line
 	9250 2500 7850 2500
 Connection ~ 7850 2500
 Wire Wire Line
-	10050 4100 9100 4100
-Wire Wire Line
 	9100 4100 9100 3050
 Wire Wire Line
 	9100 3050 7850 3050
 Connection ~ 7850 3050
 Wire Wire Line
-	10050 4300 8950 4300
-Wire Wire Line
 	8950 4300 8950 3600
 Wire Wire Line
 	8950 3600 7850 3600
 Connection ~ 7850 3600
-Wire Wire Line
-	10050 4500 8800 4500
 Wire Wire Line
 	8800 4500 8800 4150
 Wire Wire Line
@@ -1224,16 +1176,16 @@ Connection ~ 900  2550
 $Comp
 L power:GND #PWR0105
 U 1 1 5C7EC909
-P 900 3250
-F 0 "#PWR0105" H 900 3000 50  0001 C CNN
-F 1 "GND" H 905 3077 50  0000 C CNN
-F 2 "" H 900 3250 50  0001 C CNN
-F 3 "" H 900 3250 50  0001 C CNN
-	1    900  3250
+P 900 4400
+F 0 "#PWR0105" H 900 4150 50  0001 C CNN
+F 1 "GND" H 905 4227 50  0000 C CNN
+F 2 "" H 900 4400 50  0001 C CNN
+F 3 "" H 900 4400 50  0001 C CNN
+	1    900  4400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	900  3250 900  3150
+	900  4400 900  4150
 Connection ~ 900  3150
 $Comp
 L Connector:Screw_Terminal_01x05 J1
@@ -1241,7 +1193,7 @@ U 1 1 5C80C24E
 P 7450 5950
 F 0 "J1" H 7530 5992 50  0000 L CNN
 F 1 "Screw_Terminal_01x05" H 7530 5901 50  0000 L CNN
-F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-5-5.0-H_1x05_P5.00mm_Horizontal" H 7450 5950 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_PT-1,5-5-5.0-H_1x05_P5.00mm_Horizontal_valve_rep" H 7450 5950 50  0001 C CNN
 F 3 "~" H 7450 5950 50  0001 C CNN
 	1    7450 5950
 	1    0    0    -1  
@@ -1310,4 +1262,116 @@ Wire Wire Line
 Connection ~ 3750 5800
 Wire Wire Line
 	3750 5800 3400 5800
+Wire Wire Line
+	9950 3200 9800 3200
+Wire Wire Line
+	9800 3200 9800 3150
+Wire Wire Line
+	9950 3400 9800 3400
+Wire Wire Line
+	9800 3400 9800 3200
+Connection ~ 9800 3200
+Wire Wire Line
+	9950 3600 9800 3600
+Wire Wire Line
+	9800 3600 9800 3400
+Connection ~ 9800 3400
+Wire Wire Line
+	9950 3800 9800 3800
+Wire Wire Line
+	9800 3800 9800 3600
+Connection ~ 9800 3600
+Wire Wire Line
+	9950 4000 9800 4000
+Wire Wire Line
+	9800 4000 9800 3800
+Connection ~ 9800 3800
+Wire Wire Line
+	9950 4200 9800 4200
+Wire Wire Line
+	9800 4200 9800 4000
+Connection ~ 9800 4000
+Wire Wire Line
+	9950 4400 9800 4400
+Wire Wire Line
+	9800 4400 9800 4200
+Connection ~ 9800 4200
+Wire Wire Line
+	9950 3300 9700 3300
+Wire Wire Line
+	9950 3500 9550 3500
+Wire Wire Line
+	9950 3700 9400 3700
+Wire Wire Line
+	9950 3900 9250 3900
+Wire Wire Line
+	9950 4100 9100 4100
+Wire Wire Line
+	9950 4300 8950 4300
+Wire Wire Line
+	9950 4500 8800 4500
+$Comp
+L Mechanical:MountingHole_Pad H5
+U 1 1 5C605589
+P 1000 3400
+F 0 "H5" V 954 3550 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1045 3550 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 1000 3400 50  0001 C CNN
+F 3 "~" H 1000 3400 50  0001 C CNN
+	1    1000 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H6
+U 1 1 5C605611
+P 1000 3650
+F 0 "H6" V 954 3800 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1045 3800 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 1000 3650 50  0001 C CNN
+F 3 "~" H 1000 3650 50  0001 C CNN
+	1    1000 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H7
+U 1 1 5C605747
+P 1000 3900
+F 0 "H7" V 954 4050 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1045 4050 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 1000 3900 50  0001 C CNN
+F 3 "~" H 1000 3900 50  0001 C CNN
+	1    1000 3900
+	0    1    1    0   
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H8
+U 1 1 5C6057D5
+P 1000 4150
+F 0 "H8" V 954 4300 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1045 4300 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 1000 4150 50  0001 C CNN
+F 3 "~" H 1000 4150 50  0001 C CNN
+	1    1000 4150
+	0    1    1    0   
+$EndComp
+Connection ~ 900  3400
+Wire Wire Line
+	900  3400 900  3150
+Connection ~ 900  3650
+Wire Wire Line
+	900  3650 900  3400
+Connection ~ 900  3900
+Wire Wire Line
+	900  3900 900  3650
+Connection ~ 900  4150
+Wire Wire Line
+	900  4150 900  3900
+Text Label 6850 5800 0    50   ~ 0
+RelOn
+Text Label 6900 6050 0    50   ~ 0
+RelOff
+Text Label 6550 6250 0    50   ~ 0
+RelIn
+Text Label 5400 5600 0    50   ~ 0
+RelDrive
 $EndSCHEMATC
