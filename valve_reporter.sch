@@ -1374,4 +1374,25 @@ Text Label 6550 6250 0    50   ~ 0
 RelIn
 Text Label 5400 5600 0    50   ~ 0
 RelDrive
+$Comp
+L Device:C_Small C10
+U 1 1 5C53AE0A
+P 2400 5100
+F 0 "C10" H 2492 5146 50  0000 L CNN
+F 1 "50uF" H 2492 5055 50  0000 L CNN
+F 2 "Capacitor_SMD:C_2816_7142Metric_Pad3.20x4.45mm_HandSolder" H 2400 5100 50  0001 C CNN
+F 3 "~" H 2400 5100 50  0001 C CNN
+	1    2400 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 5000 2400 4900
+Wire Wire Line
+	2400 4900 2850 4900
+Connection ~ 2850 4900
+Wire Wire Line
+	2400 5200 2400 5800
+Wire Wire Line
+	2400 5800 2850 5800
+Connection ~ 2850 5800
 $EndSCHEMATC
