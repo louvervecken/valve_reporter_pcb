@@ -51,7 +51,7 @@ Wire Wire Line
 	3700 4900 3750 4900
 Wire Wire Line
 	3400 5200 3400 5800
-Text Notes 2000 1350 0    50   ~ 0
+Text Notes 5000 4900 0    50   ~ 0
 D8 needs to be low during boot
 $Comp
 L power:GND #PWR0106
@@ -228,17 +228,6 @@ F 3 "http://www.omron.com/ecb/products/pdf/en-g5le.pdf" H 6000 5550 50  0001 C C
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT:2N3904 Q1
-U 1 1 5C568BC6
-P 5700 6600
-F 0 "Q1" H 5891 6646 50  0000 L CNN
-F 1 "2N3904" H 5891 6555 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 5900 6525 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 5700 6600 50  0001 L CNN
-	1    5700 6600
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D D2
 U 1 1 5C568C95
 P 5400 5950
@@ -252,12 +241,12 @@ $EndComp
 $Comp
 L Device:R R2
 U 1 1 5C569AE5
-P 5200 6600
-F 0 "R2" V 4993 6600 50  0000 C CNN
-F 1 "2k" V 5084 6600 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5130 6600 50  0001 C CNN
-F 3 "~" H 5200 6600 50  0001 C CNN
-	1    5200 6600
+P 5200 6700
+F 0 "R2" V 4993 6700 50  0000 C CNN
+F 1 "500" V 5084 6700 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5130 6700 50  0001 C CNN
+F 3 "~" H 5200 6700 50  0001 C CNN
+	1    5200 6700
 	0    1    1    0   
 $EndComp
 $Comp
@@ -289,8 +278,6 @@ Wire Wire Line
 Connection ~ 5800 6300
 Wire Wire Line
 	5800 6300 5800 6250
-Wire Wire Line
-	5350 6600 5500 6600
 $Comp
 L power:GND #PWR0113
 U 1 1 5C56C533
@@ -303,9 +290,7 @@ F 3 "" H 5800 6900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5800 6900 5800 6800
-Wire Wire Line
-	4950 6600 5050 6600
+	5800 6900 5800 6850
 Wire Wire Line
 	6100 5650 6100 5450
 $Comp
@@ -843,8 +828,6 @@ Wire Wire Line
 	6750 1150 6600 1150
 Connection ~ 6750 1150
 Wire Wire Line
-	4950 6600 4950 3550
-Wire Wire Line
 	4950 3550 4200 3550
 Wire Wire Line
 	6200 6250 7250 6250
@@ -1124,55 +1107,47 @@ Wire Wire Line
 $Comp
 L Mechanical:MountingHole_Pad H1
 U 1 1 5C7A6D18
-P 1000 2250
-F 0 "H1" V 954 2400 50  0000 L CNN
-F 1 "MountingHole_Pad" V 1045 2400 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 1000 2250 50  0001 C CNN
-F 3 "~" H 1000 2250 50  0001 C CNN
-	1    1000 2250
+P 1000 2100
+F 0 "H1" V 954 2250 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1045 2250 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 1000 2100 50  0001 C CNN
+F 3 "~" H 1000 2100 50  0001 C CNN
+	1    1000 2100
 	0    1    1    0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H2
 U 1 1 5C7A6DAA
-P 1000 2550
-F 0 "H2" V 954 2700 50  0000 L CNN
-F 1 "MountingHole_Pad" V 1045 2700 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 1000 2550 50  0001 C CNN
-F 3 "~" H 1000 2550 50  0001 C CNN
-	1    1000 2550
+P 1000 2400
+F 0 "H2" V 954 2550 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1045 2550 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 1000 2400 50  0001 C CNN
+F 3 "~" H 1000 2400 50  0001 C CNN
+	1    1000 2400
 	0    1    1    0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 5C7A6E22
-P 1000 2850
-F 0 "H3" V 954 3000 50  0000 L CNN
-F 1 "MountingHole_Pad" V 1045 3000 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 1000 2850 50  0001 C CNN
-F 3 "~" H 1000 2850 50  0001 C CNN
-	1    1000 2850
+P 1000 2700
+F 0 "H3" V 954 2850 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1045 2850 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 1000 2700 50  0001 C CNN
+F 3 "~" H 1000 2700 50  0001 C CNN
+	1    1000 2700
 	0    1    1    0   
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 5C7A6E9E
-P 1000 3150
-F 0 "H4" V 954 3300 50  0000 L CNN
-F 1 "MountingHole_Pad" V 1045 3300 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 1000 3150 50  0001 C CNN
-F 3 "~" H 1000 3150 50  0001 C CNN
-	1    1000 3150
+P 1000 3000
+F 0 "H4" V 954 3150 50  0000 L CNN
+F 1 "MountingHole_Pad" V 1045 3150 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_ISO7380_Pad" H 1000 3000 50  0001 C CNN
+F 3 "~" H 1000 3000 50  0001 C CNN
+	1    1000 3000
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	900  3150 900  2850
-Wire Wire Line
-	900  2850 900  2550
-Connection ~ 900  2850
-Wire Wire Line
-	900  2550 900  2250
-Connection ~ 900  2550
 $Comp
 L power:GND #PWR0105
 U 1 1 5C7EC909
@@ -1186,7 +1161,6 @@ F 3 "" H 900 4400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	900  4400 900  4150
-Connection ~ 900  3150
 $Comp
 L Connector:Screw_Terminal_01x05 J1
 U 1 1 5C80C24E
@@ -1354,9 +1328,6 @@ F 3 "~" H 1000 4150 50  0001 C CNN
 	1    1000 4150
 	0    1    1    0   
 $EndComp
-Connection ~ 900  3400
-Wire Wire Line
-	900  3400 900  3150
 Connection ~ 900  3650
 Wire Wire Line
 	900  3650 900  3400
@@ -1379,7 +1350,7 @@ L Device:C_Small C10
 U 1 1 5C53AE0A
 P 2400 5100
 F 0 "C10" H 2492 5146 50  0000 L CNN
-F 1 "50uF" H 2492 5055 50  0000 L CNN
+F 1 "100uF" H 2492 5055 50  0000 L CNN
 F 2 "Capacitor_SMD:C_2816_7142Metric_Pad3.20x4.45mm_HandSolder" H 2400 5100 50  0001 C CNN
 F 3 "~" H 2400 5100 50  0001 C CNN
 	1    2400 5100
@@ -1395,4 +1366,157 @@ Wire Wire Line
 Wire Wire Line
 	2400 5800 2850 5800
 Connection ~ 2850 5800
+Text Notes 2650 1750 0    50   ~ 0
+Optional to monitor input level
+Text Notes 2350 4350 0    50   ~ 0
+NodeMCU has on board 3.3V regulator and decoupling\nWe scale down to 5V to keep heat down on NodeMCU.
+$Comp
+L dk_Transistors-FETs-MOSFETs-Single:FDV303N Q1
+U 1 1 5C553D13
+P 5800 6600
+F 0 "Q1" H 5908 6653 60  0000 L CNN
+F 1 "FDV303N" H 5908 6547 60  0000 L CNN
+F 2 "digikey-footprints:SOT-23-3" H 6000 6800 60  0001 L CNN
+F 3 "https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/FDV303N.pdf" H 6000 6900 60  0001 L CNN
+F 4 "FDV303NCT-ND" H 6000 7000 60  0001 L CNN "Digi-Key_PN"
+F 5 "FDV303N" H 6000 7100 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6000 7200 60  0001 L CNN "Category"
+F 7 "Transistors - FETs, MOSFETs - Single" H 6000 7300 60  0001 L CNN "Family"
+F 8 "https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/FDV303N.pdf" H 6000 7400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/on-semiconductor/FDV303N/FDV303NCT-ND/458956" H 6000 7500 60  0001 L CNN "DK_Detail_Page"
+F 10 "MOSFET N-CH 25V 680MA SOT-23" H 6000 7600 60  0001 L CNN "Description"
+F 11 "ON Semiconductor" H 6000 7700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6000 7800 60  0001 L CNN "Status"
+	1    5800 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 6700 5500 6700
+Wire Wire Line
+	4950 6700 5050 6700
+Wire Wire Line
+	4950 3550 4950 6700
+$Comp
+L Device:R R19
+U 1 1 5C574FF1
+P 5200 6850
+F 0 "R19" V 4993 6850 50  0000 C CNN
+F 1 "10k" V 5084 6850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5130 6850 50  0001 C CNN
+F 3 "~" H 5200 6850 50  0001 C CNN
+	1    5200 6850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	4950 6700 4950 6850
+Wire Wire Line
+	4950 6850 5050 6850
+Connection ~ 4950 6700
+Wire Wire Line
+	5350 6850 5800 6850
+Connection ~ 5800 6850
+Wire Wire Line
+	5800 6850 5800 6800
+$Comp
+L Device:R R18
+U 1 1 5C5A3068
+P 900 3200
+F 0 "R18" H 830 3154 50  0000 R CNN
+F 1 "1M" H 830 3245 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 830 3200 50  0001 C CNN
+F 3 "~" H 900 3200 50  0001 C CNN
+	1    900  3200
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	900  3350 900  3400
+Connection ~ 900  3400
+Wire Wire Line
+	900  3050 900  3000
+Wire Wire Line
+	900  3000 900  2700
+Connection ~ 900  3000
+Wire Wire Line
+	900  2700 900  2400
+Connection ~ 900  2700
+Wire Wire Line
+	900  2400 900  2100
+Connection ~ 900  2400
+$Comp
+L Connector:TestPoint_Probe TP1
+U 1 1 5C5DE5A9
+P 5750 1000
+F 0 "TP1" H 5903 1102 50  0000 L CNN
+F 1 "TestPoint_Probe" H 5903 1011 50  0000 L CNN
+F 2 "" H 5950 1000 50  0001 C CNN
+F 3 "~" H 5950 1000 50  0001 C CNN
+	1    5750 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP2
+U 1 1 5C5DE6F3
+P 5750 1550
+F 0 "TP2" H 5903 1652 50  0000 L CNN
+F 1 "TestPoint_Probe" H 5903 1561 50  0000 L CNN
+F 2 "" H 5950 1550 50  0001 C CNN
+F 3 "~" H 5950 1550 50  0001 C CNN
+	1    5750 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP3
+U 1 1 5C5DE797
+P 5700 2100
+F 0 "TP3" H 5853 2202 50  0000 L CNN
+F 1 "TestPoint_Probe" H 5853 2111 50  0000 L CNN
+F 2 "" H 5900 2100 50  0001 C CNN
+F 3 "~" H 5900 2100 50  0001 C CNN
+	1    5700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP4
+U 1 1 5C5DE849
+P 5700 2650
+F 0 "TP4" H 5853 2752 50  0000 L CNN
+F 1 "TestPoint_Probe" H 5853 2661 50  0000 L CNN
+F 2 "" H 5900 2650 50  0001 C CNN
+F 3 "~" H 5900 2650 50  0001 C CNN
+	1    5700 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP5
+U 1 1 5C5DE8E9
+P 5700 3200
+F 0 "TP5" H 5853 3302 50  0000 L CNN
+F 1 "TestPoint_Probe" H 5853 3211 50  0000 L CNN
+F 2 "" H 5900 3200 50  0001 C CNN
+F 3 "~" H 5900 3200 50  0001 C CNN
+	1    5700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP6
+U 1 1 5C5DE98F
+P 5800 3800
+F 0 "TP6" H 5953 3902 50  0000 L CNN
+F 1 "TestPoint_Probe" H 5953 3811 50  0000 L CNN
+F 2 "" H 6000 3800 50  0001 C CNN
+F 3 "~" H 6000 3800 50  0001 C CNN
+	1    5800 3800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint_Probe TP7
+U 1 1 5C5DEA37
+P 5750 4300
+F 0 "TP7" H 5903 4402 50  0000 L CNN
+F 1 "TestPoint_Probe" H 5903 4311 50  0000 L CNN
+F 2 "" H 5950 4300 50  0001 C CNN
+F 3 "~" H 5950 4300 50  0001 C CNN
+	1    5750 4300
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
