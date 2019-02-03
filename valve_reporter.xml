@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>C:\Users\ffytwr\Documents\gsv\pcbs\valve_reporter\valve_reporter.sch</source>
-    <date>1/31/2019 5:20:42 PM</date>
-    <tool>Eeschema (5.0.2)-1</tool>
+    <source>/home/lou/Documents/gsv/pcbs/valve_reporter_pcb/valve_reporter.sch</source>
+    <date>Son 03 Feb 2019 15:25:06 CET</date>
+    <tool>Eeschema 5.0.2-bee76a0~70~ubuntu16.04.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title/>
@@ -22,7 +22,7 @@
     <comp ref="U1">
       <value>NodeMCU_1.0_(ESP-12E)</value>
       <footprint>ESP8266:NodeMCU-LoLinV3</footprint>
-      <libsource lib="ESP8266" part="NodeMCU_1.0_(ESP-12E)" description=""/>
+      <libsource lib="valve_reporter-rescue" part="NodeMCU_1.0_(ESP-12E)-ESP8266" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C4EFDE5</tstamp>
     </comp>
@@ -82,14 +82,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C5688A6</tstamp>
     </comp>
-    <comp ref="Q1">
-      <value>2N3904</value>
-      <footprint>Package_TO_SOT_THT:TO-92_Inline</footprint>
-      <datasheet>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</datasheet>
-      <libsource lib="Transistor_BJT" part="2N3904" description="0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5C568BC6</tstamp>
-    </comp>
     <comp ref="D2">
       <value>D</value>
       <footprint>Diode_SMD:D_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
@@ -99,7 +91,7 @@
       <tstamp>5C568C95</tstamp>
     </comp>
     <comp ref="R2">
-      <value>2k</value>
+      <value>500</value>
       <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="R" description="Resistor"/>
@@ -377,7 +369,7 @@
         <field name="Manufacturer">ON Semiconductor</field>
         <field name="Status">Active</field>
       </fields>
-      <libsource lib="dk_PMIC-Voltage-Regulators-Linear" part="MC7805CTG" description="IC REG LINEAR 5V 1A TO220AB"/>
+      <libsource lib="valve_reporter-rescue" part="MC7805CTG-dk_PMIC-Voltage-Regulators-Linear" description=""/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C728AC9</tstamp>
     </comp>
@@ -478,12 +470,111 @@
       <tstamp>5C6057D5</tstamp>
     </comp>
     <comp ref="C10">
-      <value>50uF</value>
+      <value>100uF</value>
       <footprint>Capacitor_SMD:C_2816_7142Metric_Pad3.20x4.45mm_HandSolder</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5C53AE0A</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>FDV303N</value>
+      <footprint>Package_TO_SOT_SMD:TSOT-23_HandSoldering</footprint>
+      <datasheet>https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/FDV303N.pdf</datasheet>
+      <fields>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="DK_Datasheet_Link">https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/FDV303N.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/on-semiconductor/FDV303N/FDV303NCT-ND/458956</field>
+        <field name="Description">MOSFET N-CH 25V 680MA SOT-23</field>
+        <field name="Digi-Key_PN">FDV303NCT-ND</field>
+        <field name="Family">Transistors - FETs, MOSFETs - Single</field>
+        <field name="MPN">FDV303N</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="valve_reporter-rescue" part="FDV303N-dk_Transistors-FETs-MOSFETs-Single" description=""/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C553D13</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>10k</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C574FF1</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>1M</value>
+      <footprint>Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R" description="Resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5A3068</tstamp>
+    </comp>
+    <comp ref="TP1">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5DE5A9</tstamp>
+    </comp>
+    <comp ref="TP2">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5DE6F3</tstamp>
+    </comp>
+    <comp ref="TP3">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5DE797</tstamp>
+    </comp>
+    <comp ref="TP4">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5DE849</tstamp>
+    </comp>
+    <comp ref="TP5">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5DE8E9</tstamp>
+    </comp>
+    <comp ref="TP6">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5DE98F</tstamp>
+    </comp>
+    <comp ref="TP7">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C5DEA37</tstamp>
+    </comp>
+    <comp ref="TP5V1">
+      <value>TestPoint_Probe</value>
+      <footprint>TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector" part="TestPoint_Probe" description="test point (alternative probe-style design)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5C57D4F0</tstamp>
     </comp>
   </components>
   <libparts>
@@ -530,6 +621,21 @@
         <pin num="12" name="Pin_12" type="passive"/>
         <pin num="13" name="Pin_13" type="passive"/>
         <pin num="14" name="Pin_14" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Connector" part="TestPoint_Probe">
+      <description>test point (alternative probe-style design)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Pin*</fp>
+        <fp>Test*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">TP</field>
+        <field name="Value">TestPoint_Probe</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="C_Small">
@@ -633,10 +739,87 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="ESP8266" part="NodeMCU_1.0_(ESP-12E)">
+    <libpart lib="Mechanical" part="MountingHole_Pad">
+      <description>Mounting Hole with connection</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>MountingHole*Pad*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">H</field>
+        <field name="Value">MountingHole_Pad</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="Relay" part="G5LE-1">
+      <description>Omron G5LE relay, Miniature Single Pole, SPDT, 10A</description>
+      <docs>http://www.omron.com/ecb/products/pdf/en-g5le.pdf</docs>
+      <footprints>
+        <fp>Relay*SPDT*Omron*G5LE?1*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">K</field>
+        <field name="Value">G5LE-1</field>
+        <field name="Footprint">Relay_THT:Relay_SPDT_Omron-G5LE-1</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+        <pin num="3" name="~" type="passive"/>
+        <pin num="4" name="~" type="passive"/>
+        <pin num="5" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="valve_reporter-rescue" part="FDV303N-dk_Transistors-FETs-MOSFETs-Single">
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">FDV303N-dk_Transistors-FETs-MOSFETs-Single</field>
+        <field name="Footprint">digikey-footprints:SOT-23-3</field>
+        <field name="Datasheet">https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/FDV303N.pdf</field>
+        <field name="Digi-Key_PN">FDV303NCT-ND</field>
+        <field name="MPN">FDV303N</field>
+        <field name="Category">Discrete Semiconductor Products</field>
+        <field name="Family">Transistors - FETs, MOSFETs - Single</field>
+        <field name="DK_Datasheet_Link">https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/FDV303N.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/on-semiconductor/FDV303N/FDV303NCT-ND/458956</field>
+        <field name="Description">MOSFET N-CH 25V 680MA SOT-23</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="G" type="BiDi"/>
+        <pin num="2" name="S" type="BiDi"/>
+        <pin num="3" name="D" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="valve_reporter-rescue" part="MC7805CTG-dk_PMIC-Voltage-Regulators-Linear">
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">NodeMCU_1.0_(ESP-12E)</field>
+        <field name="Value">MC7805CTG-dk_PMIC-Voltage-Regulators-Linear</field>
+        <field name="Footprint">digikey-footprints:TO-220-3</field>
+        <field name="Datasheet">http://www.onsemi.com/pub/Collateral/MC7800-D.PDF</field>
+        <field name="Digi-Key_PN">MC7805CTGOS-ND</field>
+        <field name="MPN">MC7805CTG</field>
+        <field name="Category">Integrated Circuits (ICs)</field>
+        <field name="Family">PMIC - Voltage Regulators - Linear</field>
+        <field name="DK_Datasheet_Link">http://www.onsemi.com/pub/Collateral/MC7800-D.PDF</field>
+        <field name="DK_Detail_Page">/product-detail/en/on-semiconductor/MC7805CTG/MC7805CTGOS-ND/919333</field>
+        <field name="Description">IC REG LINEAR 5V 1A TO220AB</field>
+        <field name="Manufacturer">ON Semiconductor</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="valve_reporter-rescue" part="NodeMCU_1.0_(ESP-12E)-ESP8266">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">NodeMCU_1.0_(ESP-12E)-ESP8266</field>
       </fields>
       <pins>
         <pin num="1" name="A0(ADC0)" type="input"/>
@@ -671,340 +854,274 @@
         <pin num="30" name="D0(GPIO16)" type="BiDi"/>
       </pins>
     </libpart>
-    <libpart lib="Mechanical" part="MountingHole_Pad">
-      <description>Mounting Hole with connection</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>MountingHole*Pad*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">H</field>
-        <field name="Value">MountingHole_Pad</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="input"/>
-      </pins>
-    </libpart>
-    <libpart lib="Relay" part="G5LE-1">
-      <description>Omron G5LE relay, Miniature Single Pole, SPDT, 10A</description>
-      <docs>http://www.omron.com/ecb/products/pdf/en-g5le.pdf</docs>
-      <footprints>
-        <fp>Relay*SPDT*Omron*G5LE?1*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">K</field>
-        <field name="Value">G5LE-1</field>
-        <field name="Footprint">Relay_THT:Relay_SPDT_Omron-G5LE-1</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-        <pin num="3" name="~" type="passive"/>
-        <pin num="4" name="~" type="passive"/>
-        <pin num="5" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="Transistor_BJT" part="2N3904">
-      <description>0.2A Ic, 40V Vce, Small Signal NPN Transistor, TO-92</description>
-      <docs>https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf</docs>
-      <footprints>
-        <fp>TO?92*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">Q</field>
-        <field name="Value">2N3904</field>
-        <field name="Footprint">Package_TO_SOT_THT:TO-92_Inline</field>
-      </fields>
-      <pins>
-        <pin num="1" name="E" type="passive"/>
-        <pin num="2" name="B" type="passive"/>
-        <pin num="3" name="C" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="dk_PMIC-Voltage-Regulators-Linear" part="MC7805CTG">
-      <description>IC REG LINEAR 5V 1A TO220AB</description>
-      <docs>http://www.onsemi.com/pub/Collateral/MC7800-D.PDF</docs>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">MC7805CTG</field>
-        <field name="Footprint">digikey-footprints:TO-220-3</field>
-        <field name="Datasheet">http://www.onsemi.com/pub/Collateral/MC7800-D.PDF</field>
-        <field name="Digi-Key_PN">MC7805CTGOS-ND</field>
-        <field name="MPN">MC7805CTG</field>
-        <field name="Category">Integrated Circuits (ICs)</field>
-        <field name="Family">PMIC - Voltage Regulators - Linear</field>
-        <field name="DK_Datasheet_Link">http://www.onsemi.com/pub/Collateral/MC7800-D.PDF</field>
-        <field name="DK_Detail_Page">/product-detail/en/on-semiconductor/MC7805CTG/MC7805CTGOS-ND/919333</field>
-        <field name="Description">IC REG LINEAR 5V 1A TO220AB</field>
-        <field name="Manufacturer">ON Semiconductor</field>
-        <field name="Status">Active</field>
-      </fields>
-      <pins>
-        <pin num="1" name="IN" type="power_in"/>
-        <pin num="2" name="GND" type="power_in"/>
-        <pin num="3" name="OUT" type="power_out"/>
-      </pins>
-    </libpart>
   </libparts>
   <libraries>
     <library logical="Connector">
-      <uri>C:\Program Files\KiCad\share\kicad\library/Connector.lib</uri>
+      <uri>/usr/share/kicad/library/Connector.lib</uri>
     </library>
     <library logical="Device">
-      <uri>C:\Program Files\KiCad\share\kicad\library/Device.lib</uri>
-    </library>
-    <library logical="ESP8266">
-      <uri>C:/Users/ffytwr/Documents/gsv/pcbs/external_git_libs/kicad-ESP8266/ESP8266.lib</uri>
+      <uri>/usr/share/kicad/library/Device.lib</uri>
     </library>
     <library logical="Mechanical">
-      <uri>C:\Program Files\KiCad\share\kicad\library/Mechanical.lib</uri>
+      <uri>/usr/share/kicad/library/Mechanical.lib</uri>
     </library>
     <library logical="Relay">
-      <uri>C:\Program Files\KiCad\share\kicad\library/Relay.lib</uri>
+      <uri>/usr/share/kicad/library/Relay.lib</uri>
     </library>
-    <library logical="Transistor_BJT">
-      <uri>C:\Program Files\KiCad\share\kicad\library/Transistor_BJT.lib</uri>
-    </library>
-    <library logical="dk_PMIC-Voltage-Regulators-Linear">
-      <uri>C:/Users/ffytwr/Documents/gsv/pcbs/external_git_libs/digikey-kicad-library/digikey-symbols/dk_PMIC-Voltage-Regulators-Linear.lib</uri>
+    <library logical="valve_reporter-rescue">
+      <uri>/home/lou/Documents/gsv/pcbs/valve_reporter_pcb/valve_reporter-rescue.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(D16-Pad1)">
-      <node ref="J2" pin="1"/>
-      <node ref="D16" pin="1"/>
-      <node ref="R16" pin="1"/>
-    </net>
-    <net code="2" name="Net-(D13-Pad1)">
-      <node ref="J2" pin="7"/>
-      <node ref="D13" pin="1"/>
-      <node ref="R13" pin="1"/>
-    </net>
-    <net code="3" name="Net-(D11-Pad1)">
-      <node ref="J2" pin="11"/>
-      <node ref="D11" pin="1"/>
-      <node ref="R11" pin="1"/>
-    </net>
-    <net code="4" name="Net-(D10-Pad1)">
-      <node ref="J2" pin="13"/>
-      <node ref="R10" pin="1"/>
-      <node ref="D10" pin="1"/>
-    </net>
-    <net code="5" name="Net-(U1-Pad27)">
-      <node ref="U1" pin="27"/>
-    </net>
-    <net code="6" name="Net-(U1-Pad19)">
-      <node ref="U1" pin="19"/>
-    </net>
-    <net code="7" name="Net-(U1-Pad18)">
-      <node ref="U1" pin="18"/>
-    </net>
-    <net code="8" name="Net-(U1-Pad13)">
-      <node ref="U1" pin="13"/>
-    </net>
-    <net code="9" name="Net-(U1-Pad12)">
-      <node ref="U1" pin="12"/>
-    </net>
-    <net code="10" name="Net-(U1-Pad9)">
+    <net code="1" name="Net-(U1-Pad9)">
       <node ref="U1" pin="9"/>
     </net>
-    <net code="11" name="Net-(U1-Pad8)">
+    <net code="2" name="Net-(U1-Pad12)">
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="3" name="Net-(U1-Pad13)">
+      <node ref="U1" pin="13"/>
+    </net>
+    <net code="4" name="Net-(U1-Pad18)">
+      <node ref="U1" pin="18"/>
+    </net>
+    <net code="5" name="Net-(U1-Pad19)">
+      <node ref="U1" pin="19"/>
+    </net>
+    <net code="6" name="Net-(U1-Pad27)">
+      <node ref="U1" pin="27"/>
+    </net>
+    <net code="7" name="Net-(U1-Pad8)">
       <node ref="U1" pin="8"/>
     </net>
-    <net code="12" name="Net-(U1-Pad7)">
-      <node ref="U1" pin="7"/>
+    <net code="8" name="Net-(U1-Pad16)">
+      <node ref="U1" pin="16"/>
     </net>
-    <net code="13" name="Net-(U1-Pad6)">
-      <node ref="U1" pin="6"/>
+    <net code="9" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="R1" pin="1"/>
     </net>
-    <net code="14" name="Net-(U1-Pad5)">
-      <node ref="U1" pin="5"/>
-    </net>
-    <net code="15" name="Net-(U1-Pad4)">
-      <node ref="U1" pin="4"/>
-    </net>
-    <net code="16" name="Net-(U1-Pad3)">
-      <node ref="U1" pin="3"/>
-    </net>
-    <net code="17" name="Net-(U1-Pad2)">
-      <node ref="U1" pin="2"/>
-    </net>
-    <net code="18" name="Net-(R17-Pad2)">
+    <net code="10" name="Net-(R17-Pad2)">
       <node ref="R17" pin="2"/>
       <node ref="U1" pin="1"/>
     </net>
-    <net code="19" name="Net-(D1-Pad2)">
-      <node ref="R1" pin="1"/>
-      <node ref="D1" pin="2"/>
-    </net>
-    <net code="20" name="Net-(C1-Pad1)">
-      <node ref="U1" pin="30"/>
-      <node ref="R3" pin="2"/>
-      <node ref="C1" pin="1"/>
-      <node ref="R17" pin="1"/>
-      <node ref="D3" pin="1"/>
-      <node ref="R10" pin="2"/>
-    </net>
-    <net code="21" name="Net-(C2-Pad1)">
-      <node ref="R11" pin="2"/>
-      <node ref="D4" pin="1"/>
-      <node ref="C2" pin="1"/>
-      <node ref="U1" pin="29"/>
-      <node ref="R4" pin="2"/>
-    </net>
-    <net code="22" name="Net-(R2-Pad2)">
-      <node ref="R2" pin="2"/>
-      <node ref="U1" pin="20"/>
-    </net>
-    <net code="23" name="/RelIn">
-      <node ref="J1" pin="5"/>
-      <node ref="K1" pin="1"/>
-    </net>
-    <net code="24" name="/RelOff">
-      <node ref="K1" pin="3"/>
-      <node ref="J1" pin="4"/>
-    </net>
-    <net code="25" name="/RelOn">
-      <node ref="K1" pin="4"/>
-      <node ref="J1" pin="3"/>
-    </net>
-    <net code="26" name="+5V">
-      <node ref="R1" pin="2"/>
-      <node ref="U2" pin="3"/>
-      <node ref="U1" pin="15"/>
-      <node ref="C9" pin="1"/>
-    </net>
-    <net code="27" name="GND">
-      <node ref="J1" pin="2"/>
-      <node ref="U2" pin="2"/>
-      <node ref="D11" pin="2"/>
-      <node ref="D5" pin="2"/>
-      <node ref="C3" pin="2"/>
-      <node ref="R5" pin="1"/>
-      <node ref="C8" pin="2"/>
-      <node ref="C9" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="D9" pin="2"/>
-      <node ref="R9" pin="1"/>
-      <node ref="Q1" pin="1"/>
-      <node ref="U1" pin="17"/>
-      <node ref="U1" pin="10"/>
-      <node ref="U1" pin="24"/>
-      <node ref="U1" pin="14"/>
-      <node ref="D16" pin="2"/>
-      <node ref="R3" pin="1"/>
-      <node ref="C1" pin="2"/>
-      <node ref="D3" pin="2"/>
-      <node ref="R8" pin="1"/>
-      <node ref="D7" pin="2"/>
-      <node ref="C5" pin="2"/>
-      <node ref="D15" pin="2"/>
-      <node ref="D12" pin="2"/>
-      <node ref="R6" pin="1"/>
-      <node ref="D14" pin="2"/>
-      <node ref="D6" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="R7" pin="1"/>
-      <node ref="D8" pin="2"/>
-      <node ref="D1" pin="1"/>
-      <node ref="C6" pin="2"/>
-      <node ref="D10" pin="2"/>
-      <node ref="H8" pin="1"/>
-      <node ref="H7" pin="1"/>
-      <node ref="H6" pin="1"/>
-      <node ref="H5" pin="1"/>
-      <node ref="C2" pin="2"/>
-      <node ref="H4" pin="1"/>
-      <node ref="H3" pin="1"/>
-      <node ref="H2" pin="1"/>
-      <node ref="H1" pin="1"/>
-      <node ref="D13" pin="2"/>
-      <node ref="D4" pin="2"/>
-      <node ref="R4" pin="1"/>
-      <node ref="C10" pin="2"/>
-    </net>
-    <net code="28" name="+12V">
-      <node ref="J2" pin="8"/>
-      <node ref="J2" pin="14"/>
-      <node ref="J2" pin="2"/>
-      <node ref="J2" pin="4"/>
-      <node ref="J2" pin="6"/>
-      <node ref="J2" pin="12"/>
-      <node ref="J2" pin="10"/>
-      <node ref="J1" pin="1"/>
-      <node ref="C8" pin="1"/>
-      <node ref="C10" pin="1"/>
-      <node ref="K1" pin="5"/>
-      <node ref="D2" pin="1"/>
-      <node ref="U2" pin="1"/>
-    </net>
-    <net code="29" name="Net-(U1-Pad11)">
-      <node ref="U1" pin="11"/>
-    </net>
-    <net code="30" name="Net-(U1-Pad25)">
+    <net code="11" name="Net-(U1-Pad25)">
       <node ref="U1" pin="25"/>
     </net>
-    <net code="31" name="Net-(U1-Pad16)">
-      <node ref="U1" pin="16"/>
+    <net code="12" name="Net-(U1-Pad2)">
+      <node ref="U1" pin="2"/>
     </net>
-    <net code="32" name="Net-(D2-Pad2)">
-      <node ref="Q1" pin="3"/>
-      <node ref="D2" pin="2"/>
-      <node ref="K1" pin="2"/>
+    <net code="13" name="Net-(U1-Pad3)">
+      <node ref="U1" pin="3"/>
     </net>
-    <net code="33" name="Net-(C7-Pad1)">
-      <node ref="U1" pin="21"/>
-      <node ref="R16" pin="2"/>
-      <node ref="D9" pin="1"/>
-      <node ref="C7" pin="1"/>
-      <node ref="R9" pin="2"/>
+    <net code="14" name="Net-(U1-Pad4)">
+      <node ref="U1" pin="4"/>
     </net>
-    <net code="34" name="Net-(D15-Pad1)">
-      <node ref="J2" pin="3"/>
-      <node ref="R15" pin="1"/>
-      <node ref="D15" pin="1"/>
+    <net code="15" name="Net-(U1-Pad5)">
+      <node ref="U1" pin="5"/>
     </net>
-    <net code="35" name="Net-(Q1-Pad2)">
-      <node ref="R2" pin="1"/>
-      <node ref="Q1" pin="2"/>
+    <net code="16" name="Net-(U1-Pad6)">
+      <node ref="U1" pin="6"/>
     </net>
-    <net code="36" name="Net-(C6-Pad1)">
-      <node ref="U1" pin="22"/>
-      <node ref="C6" pin="1"/>
-      <node ref="R8" pin="2"/>
-      <node ref="D8" pin="1"/>
-      <node ref="R15" pin="2"/>
+    <net code="17" name="Net-(U1-Pad7)">
+      <node ref="U1" pin="7"/>
     </net>
-    <net code="37" name="Net-(D12-Pad1)">
-      <node ref="D12" pin="1"/>
-      <node ref="J2" pin="9"/>
-      <node ref="R12" pin="1"/>
+    <net code="18" name="Net-(U1-Pad11)">
+      <node ref="U1" pin="11"/>
     </net>
-    <net code="38" name="Net-(C3-Pad1)">
+    <net code="19" name="Net-(C3-Pad1)">
       <node ref="U1" pin="28"/>
+      <node ref="TP3" pin="1"/>
       <node ref="R12" pin="2"/>
       <node ref="D5" pin="1"/>
       <node ref="C3" pin="1"/>
       <node ref="R5" pin="2"/>
     </net>
-    <net code="39" name="Net-(C4-Pad1)">
-      <node ref="R13" pin="2"/>
-      <node ref="D6" pin="1"/>
-      <node ref="C4" pin="1"/>
-      <node ref="R6" pin="2"/>
-      <node ref="U1" pin="26"/>
+    <net code="20" name="Net-(C1-Pad1)">
+      <node ref="R3" pin="2"/>
+      <node ref="TP1" pin="1"/>
+      <node ref="R10" pin="2"/>
+      <node ref="D3" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="U1" pin="30"/>
+      <node ref="R17" pin="1"/>
     </net>
-    <net code="40" name="Net-(C5-Pad1)">
+    <net code="21" name="Net-(D16-Pad1)">
+      <node ref="D16" pin="1"/>
+      <node ref="J2" pin="1"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="22" name="Net-(D15-Pad1)">
+      <node ref="J2" pin="3"/>
+      <node ref="D15" pin="1"/>
+      <node ref="R15" pin="1"/>
+    </net>
+    <net code="23" name="+12V">
+      <node ref="J2" pin="2"/>
+      <node ref="J2" pin="8"/>
+      <node ref="U2" pin="1"/>
+      <node ref="J2" pin="4"/>
+      <node ref="J2" pin="6"/>
+      <node ref="J2" pin="12"/>
+      <node ref="J2" pin="10"/>
+      <node ref="K1" pin="5"/>
+      <node ref="C8" pin="1"/>
+      <node ref="C10" pin="1"/>
+      <node ref="J2" pin="14"/>
+      <node ref="D2" pin="1"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="24" name="Net-(D12-Pad1)">
+      <node ref="R12" pin="1"/>
+      <node ref="J2" pin="9"/>
+      <node ref="D12" pin="1"/>
+    </net>
+    <net code="25" name="Net-(D11-Pad1)">
+      <node ref="D11" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="J2" pin="11"/>
+    </net>
+    <net code="26" name="Net-(D10-Pad1)">
+      <node ref="D10" pin="1"/>
+      <node ref="R10" pin="1"/>
+      <node ref="J2" pin="13"/>
+    </net>
+    <net code="27" name="Net-(C7-Pad1)">
+      <node ref="C7" pin="1"/>
+      <node ref="TP7" pin="1"/>
+      <node ref="U1" pin="21"/>
+      <node ref="R9" pin="2"/>
+      <node ref="D9" pin="1"/>
+      <node ref="R16" pin="2"/>
+    </net>
+    <net code="28" name="Net-(H1-Pad1)">
+      <node ref="R18" pin="2"/>
+      <node ref="H2" pin="1"/>
+      <node ref="H3" pin="1"/>
+      <node ref="H1" pin="1"/>
+      <node ref="H4" pin="1"/>
+    </net>
+    <net code="29" name="Net-(R19-Pad1)">
+      <node ref="U1" pin="20"/>
+      <node ref="R19" pin="1"/>
+      <node ref="R2" pin="2"/>
+    </net>
+    <net code="30" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="R2" pin="1"/>
+    </net>
+    <net code="31" name="Net-(D2-Pad2)">
+      <node ref="D2" pin="2"/>
+      <node ref="K1" pin="2"/>
+      <node ref="Q1" pin="3"/>
+    </net>
+    <net code="32" name="+5V">
+      <node ref="R1" pin="2"/>
+      <node ref="C9" pin="1"/>
+      <node ref="TP5V1" pin="1"/>
+      <node ref="U2" pin="3"/>
+      <node ref="U1" pin="15"/>
+    </net>
+    <net code="33" name="GND">
+      <node ref="D12" pin="2"/>
+      <node ref="D6" pin="2"/>
+      <node ref="D15" pin="2"/>
+      <node ref="U1" pin="14"/>
+      <node ref="U1" pin="17"/>
+      <node ref="U1" pin="10"/>
+      <node ref="D10" pin="2"/>
+      <node ref="U1" pin="24"/>
+      <node ref="R3" pin="1"/>
+      <node ref="D9" pin="2"/>
+      <node ref="R4" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="D4" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="R19" pin="2"/>
+      <node ref="D14" pin="2"/>
+      <node ref="D11" pin="2"/>
+      <node ref="R5" pin="1"/>
+      <node ref="C3" pin="2"/>
+      <node ref="D5" pin="2"/>
+      <node ref="D13" pin="2"/>
+      <node ref="R6" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="R7" pin="1"/>
+      <node ref="C5" pin="2"/>
+      <node ref="D7" pin="2"/>
+      <node ref="R18" pin="1"/>
+      <node ref="U2" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="R9" pin="1"/>
+      <node ref="D16" pin="2"/>
+      <node ref="D8" pin="2"/>
+      <node ref="D3" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="R8" pin="1"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="H6" pin="1"/>
+      <node ref="H7" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="H5" pin="1"/>
+      <node ref="C10" pin="2"/>
+      <node ref="H8" pin="1"/>
+    </net>
+    <net code="34" name="/RelOff">
+      <node ref="K1" pin="3"/>
+      <node ref="J1" pin="4"/>
+    </net>
+    <net code="35" name="/RelIn">
+      <node ref="K1" pin="1"/>
+      <node ref="J1" pin="5"/>
+    </net>
+    <net code="36" name="/RelOn">
+      <node ref="K1" pin="4"/>
+      <node ref="J1" pin="3"/>
+    </net>
+    <net code="37" name="Net-(C6-Pad1)">
+      <node ref="TP6" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="R8" pin="2"/>
+      <node ref="D8" pin="1"/>
+      <node ref="R15" pin="2"/>
+      <node ref="U1" pin="22"/>
+    </net>
+    <net code="38" name="Net-(C2-Pad1)">
+      <node ref="TP2" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="R11" pin="2"/>
+      <node ref="U1" pin="29"/>
+      <node ref="D4" pin="1"/>
+      <node ref="C2" pin="1"/>
+    </net>
+    <net code="39" name="Net-(C5-Pad1)">
       <node ref="U1" pin="23"/>
       <node ref="R7" pin="2"/>
-      <node ref="R14" pin="2"/>
-      <node ref="D7" pin="1"/>
       <node ref="C5" pin="1"/>
+      <node ref="R14" pin="2"/>
+      <node ref="TP5" pin="1"/>
+      <node ref="D7" pin="1"/>
+    </net>
+    <net code="40" name="Net-(D13-Pad1)">
+      <node ref="D13" pin="1"/>
+      <node ref="J2" pin="7"/>
+      <node ref="R13" pin="1"/>
     </net>
     <net code="41" name="Net-(D14-Pad1)">
-      <node ref="D14" pin="1"/>
       <node ref="R14" pin="1"/>
+      <node ref="D14" pin="1"/>
       <node ref="J2" pin="5"/>
+    </net>
+    <net code="42" name="Net-(C4-Pad1)">
+      <node ref="C4" pin="1"/>
+      <node ref="D6" pin="1"/>
+      <node ref="R6" pin="2"/>
+      <node ref="U1" pin="26"/>
+      <node ref="R13" pin="2"/>
+      <node ref="TP4" pin="1"/>
     </net>
   </nets>
 </export>

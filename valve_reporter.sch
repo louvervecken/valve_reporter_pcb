@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L ESP8266:NodeMCU_1.0_(ESP-12E) U1
+L valve_reporter-rescue:NodeMCU_1.0_(ESP-12E)-ESP8266 U1
 U 1 1 5C4EFDE5
 P 3400 3250
 F 0 "U1" H 3400 4337 60  0000 C CNN
@@ -850,10 +850,10 @@ Wire Wire Line
 Wire Wire Line
 	4600 2550 4600 850 
 Wire Wire Line
-	4600 850  6750 850 
+	4600 850  5700 850 
 Connection ~ 6750 850 
 Wire Wire Line
-	6750 1400 4650 1400
+	6750 1400 5700 1400
 Wire Wire Line
 	4650 1400 4650 2650
 Wire Wire Line
@@ -864,17 +864,17 @@ Wire Wire Line
 Wire Wire Line
 	4750 2750 4750 1950
 Wire Wire Line
-	4750 1950 6750 1950
+	4750 1950 5650 1950
 Connection ~ 6750 1950
 Wire Wire Line
-	6750 2500 4850 2500
+	6750 2500 5650 2500
 Wire Wire Line
 	4850 2500 4850 2950
 Wire Wire Line
 	4850 2950 4200 2950
 Connection ~ 6750 2500
 Wire Wire Line
-	6750 3050 4600 3050
+	6750 3050 5650 3050
 Wire Wire Line
 	4600 3050 4600 3250
 Wire Wire Line
@@ -883,12 +883,12 @@ Connection ~ 6750 3050
 Wire Wire Line
 	6750 3600 5850 3600
 Wire Wire Line
-	5850 3600 5850 3350
+	5850 3600 5850 3550
 Wire Wire Line
 	5850 3350 4200 3350
 Connection ~ 6750 3600
 Wire Wire Line
-	6800 4150 5500 4150
+	6800 4150 5750 4150
 Wire Wire Line
 	5500 4150 5500 3450
 Wire Wire Line
@@ -1005,7 +1005,7 @@ NoConn ~ 4200 2850
 Wire Wire Line
 	3800 4800 3800 4900
 $Comp
-L dk_PMIC-Voltage-Regulators-Linear:MC7805CTG U2
+L valve_reporter-rescue:MC7805CTG-dk_PMIC-Voltage-Regulators-Linear U2
 U 1 1 5C728AC9
 P 3400 4900
 F 0 "U2" H 3400 5187 60  0000 C CNN
@@ -1371,12 +1371,12 @@ Optional to monitor input level
 Text Notes 2350 4350 0    50   ~ 0
 NodeMCU has on board 3.3V regulator and decoupling\nWe scale down to 5V to keep heat down on NodeMCU.
 $Comp
-L dk_Transistors-FETs-MOSFETs-Single:FDV303N Q1
+L valve_reporter-rescue:FDV303N-dk_Transistors-FETs-MOSFETs-Single Q1
 U 1 1 5C553D13
 P 5800 6600
 F 0 "Q1" H 5908 6653 60  0000 L CNN
 F 1 "FDV303N" H 5908 6547 60  0000 L CNN
-F 2 "digikey-footprints:SOT-23-3" H 6000 6800 60  0001 L CNN
+F 2 "Package_TO_SOT_SMD:TSOT-23_HandSoldering" H 6000 6800 60  0001 L CNN
 F 3 "https://media.digikey.com/pdf/Data%20Sheets/Fairchild%20PDFs/FDV303N.pdf" H 6000 6900 60  0001 L CNN
 F 4 "FDV303NCT-ND" H 6000 7000 60  0001 L CNN "Digi-Key_PN"
 F 5 "FDV303N" H 6000 7100 60  0001 L CNN "MPN"
@@ -1448,7 +1448,7 @@ U 1 1 5C5DE5A9
 P 5750 1000
 F 0 "TP1" H 5903 1102 50  0000 L CNN
 F 1 "TestPoint_Probe" H 5903 1011 50  0000 L CNN
-F 2 "" H 5950 1000 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5950 1000 50  0001 C CNN
 F 3 "~" H 5950 1000 50  0001 C CNN
 	1    5750 1000
 	1    0    0    -1  
@@ -1459,7 +1459,7 @@ U 1 1 5C5DE6F3
 P 5750 1550
 F 0 "TP2" H 5903 1652 50  0000 L CNN
 F 1 "TestPoint_Probe" H 5903 1561 50  0000 L CNN
-F 2 "" H 5950 1550 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5950 1550 50  0001 C CNN
 F 3 "~" H 5950 1550 50  0001 C CNN
 	1    5750 1550
 	1    0    0    -1  
@@ -1470,7 +1470,7 @@ U 1 1 5C5DE797
 P 5700 2100
 F 0 "TP3" H 5853 2202 50  0000 L CNN
 F 1 "TestPoint_Probe" H 5853 2111 50  0000 L CNN
-F 2 "" H 5900 2100 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5900 2100 50  0001 C CNN
 F 3 "~" H 5900 2100 50  0001 C CNN
 	1    5700 2100
 	1    0    0    -1  
@@ -1481,7 +1481,7 @@ U 1 1 5C5DE849
 P 5700 2650
 F 0 "TP4" H 5853 2752 50  0000 L CNN
 F 1 "TestPoint_Probe" H 5853 2661 50  0000 L CNN
-F 2 "" H 5900 2650 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5900 2650 50  0001 C CNN
 F 3 "~" H 5900 2650 50  0001 C CNN
 	1    5700 2650
 	1    0    0    -1  
@@ -1492,7 +1492,7 @@ U 1 1 5C5DE8E9
 P 5700 3200
 F 0 "TP5" H 5853 3302 50  0000 L CNN
 F 1 "TestPoint_Probe" H 5853 3211 50  0000 L CNN
-F 2 "" H 5900 3200 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5900 3200 50  0001 C CNN
 F 3 "~" H 5900 3200 50  0001 C CNN
 	1    5700 3200
 	1    0    0    -1  
@@ -1503,7 +1503,7 @@ U 1 1 5C5DE98F
 P 5800 3800
 F 0 "TP6" H 5953 3902 50  0000 L CNN
 F 1 "TestPoint_Probe" H 5953 3811 50  0000 L CNN
-F 2 "" H 6000 3800 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 6000 3800 50  0001 C CNN
 F 3 "~" H 6000 3800 50  0001 C CNN
 	1    5800 3800
 	1    0    0    -1  
@@ -1514,9 +1514,114 @@ U 1 1 5C5DEA37
 P 5750 4300
 F 0 "TP7" H 5903 4402 50  0000 L CNN
 F 1 "TestPoint_Probe" H 5903 4311 50  0000 L CNN
-F 2 "" H 5950 4300 50  0001 C CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 5950 4300 50  0001 C CNN
 F 3 "~" H 5950 4300 50  0001 C CNN
 	1    5750 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5750 1000 5700 1000
+Wire Wire Line
+	5700 1000 5700 850 
+Connection ~ 5700 850 
+Wire Wire Line
+	5700 850  6750 850 
+Wire Wire Line
+	5750 1550 5700 1550
+Wire Wire Line
+	5700 1550 5700 1400
+Connection ~ 5700 1400
+Wire Wire Line
+	5700 1400 4650 1400
+Wire Wire Line
+	5700 2100 5650 2100
+Wire Wire Line
+	5650 2100 5650 1950
+Connection ~ 5650 1950
+Wire Wire Line
+	5650 1950 6750 1950
+Wire Wire Line
+	5700 2650 5650 2650
+Wire Wire Line
+	5650 2650 5650 2500
+Connection ~ 5650 2500
+Wire Wire Line
+	5650 2500 4850 2500
+Wire Wire Line
+	5700 3200 5650 3200
+Wire Wire Line
+	5650 3200 5650 3050
+Connection ~ 5650 3050
+Wire Wire Line
+	5650 3050 4600 3050
+Wire Wire Line
+	5800 3800 5800 3550
+Wire Wire Line
+	5800 3550 5850 3550
+Connection ~ 5850 3550
+Wire Wire Line
+	5850 3550 5850 3350
+Wire Wire Line
+	5750 4300 5750 4150
+Connection ~ 5750 4150
+Wire Wire Line
+	5750 4150 5500 4150
+$Comp
+L Connector:TestPoint_Probe TP5V1
+U 1 1 5C57D4F0
+P 4150 4700
+F 0 "TP5V1" H 4303 4802 50  0000 L CNN
+F 1 "TestPoint_Probe" H 4303 4711 50  0000 L CNN
+F 2 "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" H 4350 4700 50  0001 C CNN
+F 3 "~" H 4350 4700 50  0001 C CNN
+	1    4150 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 4900 4150 4700
+Connection ~ 4150 4900
+$Comp
+L vacuum:LOGO #G1
+U 1 1 5C5ABB21
+P 2400 1250
+F 0 "#G1" H 2400 1058 60  0001 C CNN
+F 1 "LOGO" H 2400 1442 60  0001 C CNN
+F 2 "" H 2400 1250 50  0001 C CNN
+F 3 "" H 2400 1250 50  0001 C CNN
+	1    2400 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L vacuum:LOGO #G2
+U 1 1 5C5ABFBD
+P 10350 5200
+F 0 "#G2" H 10350 5008 60  0001 C CNN
+F 1 "LOGO" H 10350 5392 60  0001 C CNN
+F 2 "" H 10350 5200 50  0001 C CNN
+F 3 "" H 10350 5200 50  0001 C CNN
+	1    10350 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L vacuum:LOGO #G?
+U 1 1 5C5AC187
+P 1950 1100
+F 0 "#G?" H 1950 908 60  0001 C CNN
+F 1 "LOGO" H 1950 1292 60  0001 C CNN
+F 2 "" H 1950 1100 50  0001 C CNN
+F 3 "" H 1950 1100 50  0001 C CNN
+	1    1950 1100
+	1    0    0    -1  
+$EndComp
+$Comp
+L vacuum:LOGO #G?
+U 1 1 5C5AC3CB
+P 1850 1150
+F 0 "#G?" H 1850 958 60  0001 C CNN
+F 1 "LOGO" H 1850 1342 60  0001 C CNN
+F 2 "" H 1850 1150 50  0001 C CNN
+F 3 "" H 1850 1150 50  0001 C CNN
+	1    1850 1150
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
